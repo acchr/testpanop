@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panoptis", "Panoptis\Panoptis.csproj", "{79B31F1F-0D0E-45A4-9CA7-7434C555237D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79B31F1F-0D0E-45A4-9CA7-7434C555237D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79B31F1F-0D0E-45A4-9CA7-7434C555237D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79B31F1F-0D0E-45A4-9CA7-7434C555237D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79B31F1F-0D0E-45A4-9CA7-7434C555237D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DCBC2BD8-DEF2-4AB7-ACDE-79FD02E2243D}
+	EndGlobalSection
+EndGlobal

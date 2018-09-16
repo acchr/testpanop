@@ -1,0 +1,74 @@
+﻿@{
+    ViewBag.Title = "Requests for audio visual material";
+}
+<h2>@ViewBag.Title.</h2>
+
+<br/>
+<table id="example" class="table table-striped table-bordered" style="width:100%">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Event</th>
+            <th>Country</th>
+            <th>Location</th>
+            <th>Date</th>
+            <th>Bounty</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Tiger Nixon</td>
+            <td>Main</td>
+            <td>Edinburgh</td>
+            <td>61</td>
+            <td>2011/04/25</td>
+            <td>$320,800</td>
+            <td>
+                <img id="myImg" src="~/dist/img/photo1watermarked.png" alt="Snow" style="width:50px;max-width:50px">
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+
+                <script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+                </script>
+            </td>
+        </tr>
+       
+        
+ 
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Country</th>
+            <th>Location</th>
+            <th>Date</th>
+            <th>Bounty</th>
+        </tr>
+    </tfoot>
+</table>

@@ -1,0 +1,92 @@
+﻿@{
+    ViewBag.Title = "Requests for audio visual material";
+}
+<h2>@ViewBag.Title.</h2>
+
+<br/>
+<table id="example" class="table table-striped table-bordered" style="width:100%">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Event</th>
+            <th>Country</th>
+            <th>Location</th>
+            <th>Date</th>
+            <th>Bounty</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Tiger Nixon</td>
+            <td>Main</td>
+            <td>Edinburgh</td>
+            <td>61</td>
+            <td>2011/04/25</td>
+            <td>$320,800</td>
+            @if (User.IsInRole("Journalist"))
+            {
+            <td><input type="file" accept="video/*;capture=camera"></td>
+            <td><input type="file" accept="video/*;capture=camcorder"></td>
+            <td><input type="file"></td>
+            <td><li>@Html.ActionLink("Submit", "Materialsubmitted", "Home")</li></td>
+            }
+        </tr>
+        <tr>
+            <td>Garrett Winters</td>
+            <td>Main</td>
+            <td>Tokyo</td>
+            <td>63</td>
+            <td>2011/07/25</td>
+            <td>$170,750</td>
+            @if (User.IsInRole("Journalist"))
+            {
+                <td><input type="file" accept="video/*;capture=camera"></td>
+                <td><input type="file" accept="video/*;capture=camcorder"></td>
+                <td><input type="file"></td>
+                <td><li>@Html.ActionLink("Submit", "Materialsubmitted", "Home")</li></td>
+            }
+        </tr>
+        <tr>
+            <td>Ashton Cox</td>
+            <td>Main</td>
+            <td>San Francisco</td>
+            <td>66</td>
+            <td>2009/01/12</td>
+            <td>$86,000</td>
+            @if (User.IsInRole("Journalist"))
+            {
+                <td><input type="file" accept="video/*;capture=camera"></td>
+                <td><input type="file" accept="video/*;capture=camcorder"></td>
+                <td><input type="file"></td>
+                <td><li>@Html.ActionLink("Submit", "Materialsubmitted", "Home")</li></td>
+            }
+        </tr>
+        <tr>
+            <td>Cedric Kelly</td>
+            <td>Main</td>
+            <td>Edinburgh</td>
+            <td>22</td>
+            <td>2012/03/29</td>
+            <td>$433,060</td>
+            @if (User.IsInRole("Journalist"))
+            {
+                <td><input type="file" accept="video/*;capture=camera"></td>
+                <td><input type="file" accept="video/*;capture=camcorder"></td>
+                <td><input type="file"></td>
+                <td><li>@Html.ActionLink("Submit", "Materialsubmitted", "Home")</li></td>
+            }
+        </tr>
+        
+ 
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Country</th>
+            <th>Location</th>
+            <th>Date</th>
+            <th>Bounty</th>
+        </tr>
+    </tfoot>
+</table>
